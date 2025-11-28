@@ -1,0 +1,22 @@
+uuid: 28b83820-f04e-4ff0-b6ea-26c7b16d1598
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - marble
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: marble_breadcrumbs
+theme: marble
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

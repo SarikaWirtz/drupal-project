@@ -1,0 +1,22 @@
+uuid: 09ed7a67-b7ac-48d5-b37c-18f363087433
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - marble
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: marble_primary_local_tasks
+theme: marble
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

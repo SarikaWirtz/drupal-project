@@ -1,0 +1,20 @@
+uuid: d90cece9-c4b1-4018-8d84-8ddf3a524cd6
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - marble
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: marble_primary_admin_actions
+theme: marble
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

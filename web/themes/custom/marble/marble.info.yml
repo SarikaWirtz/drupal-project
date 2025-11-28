@@ -1,0 +1,7 @@
+name: 'Marble'
+type: theme
+description: 'Starter theme based on Olivero'
+core_version_requirement: ^11
+base theme: olivero
+libraries:
+  - marble/global-styling

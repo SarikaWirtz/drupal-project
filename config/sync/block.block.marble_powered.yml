@@ -1,0 +1,22 @@
+uuid: 2612527d-4bff-4d68-a25c-3a68cd8b33eb
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - marble
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: marble_powered
+theme: marble
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
