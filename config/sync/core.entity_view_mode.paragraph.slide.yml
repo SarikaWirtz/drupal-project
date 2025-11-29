@@ -1,0 +1,11 @@
+uuid: 51991fca-a58d-47b7-a720-74134d4c1e4f
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.slide
+label: slide
+description: null
+targetEntityType: paragraph
+cache: true

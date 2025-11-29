@@ -1,0 +1,10 @@
+uuid: 790b41ab-5816-4820-8dbe-15572521442c
+langcode: en-gb
+status: true
+dependencies: {  }
+id: hero_slider
+label: 'Hero Slider'
+icon_uuid: null
+icon_default: null
+description: 'Hero slider paragraph.'
+behavior_plugins: {  }

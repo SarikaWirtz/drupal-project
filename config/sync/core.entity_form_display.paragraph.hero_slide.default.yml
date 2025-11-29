@@ -1,0 +1,43 @@
+uuid: 1d4ac764-8f23-4f8d-a3c7-2d6683cad5cd
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_slide.field_background_image
+    - field.field.paragraph.hero_slide.field_short_text
+    - field.field.paragraph.hero_slide.field_title
+    - paragraphs.paragraphs_type.hero_slide
+  module:
+    - media_library
+    - text
+id: paragraph.hero_slide.default
+targetEntityType: paragraph
+bundle: hero_slide
+mode: default
+content:
+  field_background_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_short_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

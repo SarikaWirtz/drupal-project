@@ -1,0 +1,11 @@
+<div class="splide" id="{{ attributes.id|default('splide-' ~ random()) }}">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {% for slide in props.slides %}
+        <li class="splide__slide">
+          {{ slide }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
