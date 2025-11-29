@@ -1,0 +1,15 @@
+uuid: 20503891-d33e-4bcf-b178-11cea74ac40f
+langcode: en-gb
+status: true
+dependencies: {  }
+name: banner_3_1_768
+label: 'Banner 3:1 768'
+effects:
+  d81564bd-8ffa-4c25-b105-f514d45c4b01:
+    uuid: d81564bd-8ffa-4c25-b105-f514d45c4b01
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 256
+      anchor: center-center

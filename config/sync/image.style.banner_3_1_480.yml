@@ -1,0 +1,15 @@
+uuid: 0c5e9cd7-e923-454d-a9be-92c687336f5f
+langcode: en-gb
+status: true
+dependencies: {  }
+name: banner_3_1_480
+label: 'Banner 3:1 480'
+effects:
+  4abbf60b-c951-4c66-b563-33c0fa5fa9f6:
+    uuid: 4abbf60b-c951-4c66-b563-33c0fa5fa9f6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 160
+      anchor: center-center

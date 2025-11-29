@@ -3,4 +3,17 @@ global-styling:
     theme:
       css/style.css: {}
 
+splidejs:
+  css:
+    theme:
+      /libraries/splidejs--splide/dist/css/splide.min.css: { minified: true }
+  js:
+    /libraries/splidejs--splide/dist/js/splide.min.js: { minified: true }
 
+hero-slider:
+  js:
+    js/hero-slider.js: {}
+  dependencies:
+    - marble/splidejs
+    - core/drupal
+    - core/once

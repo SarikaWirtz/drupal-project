@@ -1,0 +1,15 @@
+uuid: 7e85ff06-aeea-417f-8c21-57838b64c1f5
+langcode: en-gb
+status: true
+dependencies: {  }
+name: banner_3_1_3840
+label: 'Banner 3:1 3840'
+effects:
+  b24b93f0-1553-459b-bf47-9b3aa9a18946:
+    uuid: b24b93f0-1553-459b-bf47-9b3aa9a18946
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 3840
+      height: 1280
+      anchor: center-center

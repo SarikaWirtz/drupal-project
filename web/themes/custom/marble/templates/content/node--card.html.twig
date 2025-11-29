@@ -1,0 +1,9 @@
+{# {{ include('marble:card-simple', {
+  heading: node.title.value,
+  url: path('entity.node.canonical', { node: node.id() }),
+  metadata: {
+    author: node.uid.entity ? node.uid.entity.label : null,
+    date: node.getCreatedTime()|format_date('medium')
+  },
+  content: content.body
+}, with_context = false) }} #}

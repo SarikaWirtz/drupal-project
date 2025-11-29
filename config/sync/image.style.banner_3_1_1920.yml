@@ -1,0 +1,15 @@
+uuid: b5b337e7-6576-4d9f-bd6f-8f1d37ac9ad8
+langcode: en-gb
+status: true
+dependencies: {  }
+name: banner_3_1_1920
+label: 'Banner 3:1 1920'
+effects:
+  67f00cd9-629e-4c8f-898b-4a91e54df0f3:
+    uuid: 67f00cd9-629e-4c8f-898b-4a91e54df0f3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 640
+      anchor: center-center

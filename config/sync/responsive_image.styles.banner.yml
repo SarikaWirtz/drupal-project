@@ -1,0 +1,31 @@
+uuid: 89c7c747-2dcc-4c91-80dc-fcfceffd325d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - image.style.banner_3_1_10
+    - image.style.banner_3_1_1080
+    - image.style.banner_3_1_1440
+    - image.style.banner_3_1_1920
+    - image.style.banner_3_1_3840
+    - image.style.banner_3_1_480
+    - image.style.banner_3_1_768
+id: banner
+label: Banner
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: auto
+      sizes_image_styles:
+        - banner_3_1_10
+        - banner_3_1_1080
+        - banner_3_1_1440
+        - banner_3_1_1920
+        - banner_3_1_3840
+        - banner_3_1_480
+        - banner_3_1_768
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: banner_3_1_1440
