@@ -1,11 +1,31 @@
-<div class="splide" id="{{ attributes.id|default('splide-' ~ random()) }}">
+{{ attach_library('marble/hero-slider') }}
+
+<div class="splide hero-slider-component" data-hero-slider-options='{{ options|default("{}")|raw }}'>
   <div class="splide__track">
     <ul class="splide__list">
-      {% for slide in props.slides %}
-        <li class="splide__slide">
-          {{ slide }}
+
+      {% for slide in slides %}
+        <li class="splide__slide hero-slide" style="background-image: url('{{ slide.image }}');">
+          
+          <div class="hero-slide-content">
+            {% if slide.title %}
+              <h2 class="hero-slide-title">{{ slide.title }}</h2>
+            {% endif %}
+
+            {% if slide.text %}
+              <p class="hero-slide-text">{{ slide.text }}</p>
+            {% endif %}
+          </div>
+
         </li>
       {% endfor %}
+
     </ul>
   </div>
+
+  {% if slots.default %}
+    <div class="hero-slider-slot">
+      {{ slots.default }}
+    </div>
+  {% endif %}
 </div>

@@ -1,26 +1,20 @@
-(function (Drupal) {
-  Drupal.behaviors.splideSlider = {
-    attach: function (context) {
-      document
-        .querySelectorAll('.splide', context)
-        .forEach(function (slider) {
-          // Prevent double init
-          if (slider.dataset.splideInitialized) return;
+console.log("i am from component");
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.hero-slider-component').forEach(slider => {
+    const options = slider.dataset.heroSliderOptions
+      ? JSON.parse(slider.dataset.heroSliderOptions)
+      : {};
 
-          new Splide(slider, {
-            type: 'slide',
-            perPage: 1,
-            pagination: true,
-            arrows: true,
-            breakpoints: {
-              768: {
-                perPage: 1,
-              },
-            },
-          }).mount();
+    new Splide(slider, Object.assign({
+      type: 'loop',
+      autoplay: true,
+      interval: 5000,
+      speed: 600,
+      rewind: true,
+      pauseOnHover: true,
+      arrows: true,
+      pagination: true,
+    }, options)).mount();
+  });
+});
 
-          slider.dataset.splideInitialized = true;
-        });
-    }
-  };
-})(Drupal);

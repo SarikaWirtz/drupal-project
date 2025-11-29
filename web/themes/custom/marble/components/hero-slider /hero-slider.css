@@ -1,7 +1,48 @@
-.splide {
-  margin: 1rem 0;
+.hero-slider-component {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.splide__slide {
+.hero-slide {
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  position: relative;
+  color: white;
+}
+
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-slide-content {
+  position: relative;
+  max-width: 700px;
+}
+
+.hero-slide-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-slide-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.hero-slider-slot {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
   text-align: center;
 }
