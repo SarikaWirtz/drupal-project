@@ -1,30 +1,23 @@
 {{ attach_library('marble/hero-slider') }}
-
-<div class="splide hero-slider-component" data-hero-slider-options='{{ options|default("{}")|raw }}'>
+<div class="splide hero-slider-component h-auto w-full overflow-hidden" data-hero-slider-options='{{ options|default("{}")|raw }}'>
   <div class="splide__track">
     <ul class="splide__list">
-
       {% for slide in slides %}
-        <li class="splide__slide hero-slide" style="background-image: url('{{ slide.image }}');">
-          
-          <div class="hero-slide-content">
+        <li class="splide__slide bg-cover bg-center flex items-center p-[3.75rem] relative text-white" style="background-image: url('{{ slide.image }}');">
+          <div class="relative max-w-[700px]">
             {% if slide.title %}
-              <h2 class="hero-slide-title">{{ slide.title }}</h2>
+              <h2 class="text-2xl md:text-4xl mb-[0.625rem]">{{ slide.title }}</h2>
             {% endif %}
-
             {% if slide.text %}
-              <p class="hero-slide-text">{{ slide.text }}</p>
+              <p class="text-lg md:text-xl leading-[1.5]">{{ slide.text }}</p>
             {% endif %}
           </div>
-
         </li>
       {% endfor %}
-
     </ul>
   </div>
-
   {% if slots.default %}
-    <div class="hero-slider-slot">
+    <div class="hero-slider-slot absolute bottom-[1.875rem] left-1/2 text-white text-center -translate-x-1/2">
       {{ slots.default }}
     </div>
   {% endif %}
