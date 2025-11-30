@@ -1,17 +1,8 @@
 hero-slider:
   css:
     theme:
-      css/hero-slider.css: {}
-  js:
-    js/hero-slider.js: {}
-  dependencies:
-    - marble/splidejs
-    - core/drupal
-
-splidejs:
-  css:
-    theme:
       /libraries/splidejs--splide/dist/css/splide.min.css: { minified: true }
   js:
     /libraries/splidejs--splide/dist/js/splide.min.js: { minified: true }
-
+  dependencies:
+    - core/drupal
