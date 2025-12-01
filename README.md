@@ -1,4 +1,8 @@
-# Clone Project.
+# Project Description
+
+This Drupal project implements a component-driven front-end architecture using Single Directory Components (SDC), Paragraphs, and the SplideJS library to deliver flexible, reusable, and performant UI elements.
+
+# Project Installation.
 
 ```bash
 git clone git@github.com:SarikaWirtz/drupal-project.git
@@ -11,8 +15,13 @@ ddev start && ddev composer install
 cp web/sites/example.settings.local.php web/sites/default/settings.local.php
 
 ddev drush cim(run it to import configuration)
+
+ddev drush cr
 ```
 
+# About Project libraries.
+
+SplideJS is a dependency of this project. Running ddev composer install will automatically download and install the library into the libraries folder.
 
 **Getting started**
 
