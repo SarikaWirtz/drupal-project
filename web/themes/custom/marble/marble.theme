@@ -4,18 +4,37 @@
  * @file
  * Functions to support theming.
  */
-
-/**
- * Implements hook_preprocess_image_widget().
- */
-function marble_preprocess_image_widget(array &$variables): void {
-  $data = &$variables['data'];
-
-  // This prevents image widget templates from rendering preview container HTML
-  // to users that do not have permission to access these previews.
-  // @todo revisit in https://drupal.org/node/953034
-  // @todo revisit in https://drupal.org/node/3114318
-  if (isset($data['preview']['#access']) && $data['preview']['#access'] === FALSE) {
-    unset($data['preview']);
-  }
+function marble_preprocess_paragraph__hero_slider(array &$variables) {
+    $paragraph = $variables['paragraph'];
+    $slides_data = [];
+    // Loop through child slide paragraphs
+    $view_builder = \Drupal::entityTypeManager()->getViewBuilder('paragraph');
+    foreach ($paragraph->get('field_slides') as $item) {
+        $slide = $item->entity;
+        if ($slide) {
+            $image_render = [];
+            // Check if slode has field and field is not empty.
+            if ($slide->hasField('field_background_image') && !$slide->get('field_background_image')->isEmpty()) {
+                $media = $slide->get('field_background_image')->entity;
+                if ($media && $media->hasField('field_media_image')) {
+                    // $image_render = \Drupal::entityTypeManager()->getViewBuilder('media')->view($media, 'banner');
+                    $image_field = $media->get('field_media_image');
+                     // Render responsive image
+                    $image_render = [
+                        '#theme' => 'responsive_image',
+                        '#responsive_image_style_id' => 'banner', // your responsive image style machine name
+                        '#uri' => $image_field->entity->getFileUri(),
+                        '#alt' => $image_field->alt ?? '',
+                        '#title' => $image_field->title ?? '',
+                    ];
+                }
+            }
+            $slides_data[] = [
+                'title' => $slide->get('field_title')->value ?? '',
+                'short_text' => $slide->get('field_short_text')->value ?? '',
+                'image' => $image_render,
+            ];
+        }
+    }
+    $variables['slides_data'] = $slides_data;
 }

@@ -1,12 +1,13 @@
 name: Hero Slider
 description: Splide.js hero slider using slide title, image and short text.
 props:
-  slides:
-    type: array
-    required: true
   options:
     type: string
     required: false
 slots:
   default:
     title: Optional overlay slot
+  images:
+      title: Media
+      type: array
+      required: true

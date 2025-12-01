@@ -16,15 +16,15 @@ image_style_mappings:
   -
     image_mapping_type: sizes
     image_mapping:
-      sizes: auto
+      sizes: 100vw
       sizes_image_styles:
         - banner_3_1_10
         - banner_3_1_1080
-        - banner_3_1_1440
         - banner_3_1_1920
         - banner_3_1_3840
-        - banner_3_1_480
         - banner_3_1_768
+        - banner_3_1_1440
+        - banner_3_1_480
     breakpoint_id: responsive_image.viewport_sizing
     multiplier: 1x
 breakpoint_group: responsive_image

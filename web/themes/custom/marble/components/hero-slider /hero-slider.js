@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.hero-slider-component').forEach(slider => {
     const options = slider.dataset.heroSliderOptions

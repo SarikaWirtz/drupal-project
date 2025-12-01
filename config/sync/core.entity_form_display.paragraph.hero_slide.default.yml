@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.hero_slide.field_title
     - paragraphs.paragraphs_type.hero_slide
   module:
+    - maxlength
     - media_library
     - text
 id: paragraph.hero_slide.default
@@ -29,7 +30,11 @@ content:
     settings:
       rows: 3
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      maxlength:
+        maxlength_js: 200
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: true
   field_title:
     type: string_textfield
     weight: 0
