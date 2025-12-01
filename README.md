@@ -9,6 +9,8 @@ ddev start && ddev composer install
 
 ```bash
 cp web/sites/example.settings.local.php web/sites/default/settings.local.php
+
+ddev drush cim(run it to import configuration)
 ```
 
 
