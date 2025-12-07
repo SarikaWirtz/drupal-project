@@ -1,0 +1,24 @@
+uuid: 7f915ee1-1d95-4d69-a5e4-e5039edd369f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - views.view.who_we_are
+  module:
+    - views
+  theme:
+    - mahi
+id: mahi_views_block__who_we_are_block_1
+theme: mahi
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:who_we_are-block_1'
+settings:
+  id: 'views_block:who_we_are-block_1'
+  label: 'Our Services'
+  label_display: '0'
+  provider: views
+  views_label: 'Our Services'
+  items_per_page: null
+visibility: {  }
