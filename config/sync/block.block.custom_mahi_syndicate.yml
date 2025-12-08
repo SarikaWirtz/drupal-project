@@ -1,0 +1,23 @@
+uuid: 92c1bb48-c7b0-4325-a707-ebd8842dcfec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - custom_mahi
+_core:
+  default_config_hash: XFLzKtO_HTDRL1UYMS83JF3BZlklmIinMCBJaurXdEY
+id: custom_mahi_syndicate
+theme: custom_mahi
+region: sidebar_first
+weight: -11
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

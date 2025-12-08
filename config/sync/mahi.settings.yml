@@ -35,8 +35,8 @@ node_author_pic: 0
 node_tags: 0
 copyright_text: 1
 scrolltotop_on: 1
-css_extra: 0
-css_code: ''
+css_extra: 1
+css_code: ".view-who-we-are .views-col {\r\n  Padding: 15px;\r\n}\r\n\r\n.view-who-we-are .views-col img {\r\n  margin-bottom: 35px;\r\n}"
 bootstrapicons: 0
 fontawesome_five: 0
 fontawesome_six: 0

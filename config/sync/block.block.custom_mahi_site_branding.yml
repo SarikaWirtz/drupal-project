@@ -1,0 +1,25 @@
+uuid: b45aac47-656c-4c5c-8230-b3228e4440f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - custom_mahi
+_core:
+  default_config_hash: Ki5kUxL9gNONfmNzBVYav365zNdgYNhmOkIPf37rjeE
+id: custom_mahi_site_branding
+theme: custom_mahi
+region: sidebar_first
+weight: -11
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

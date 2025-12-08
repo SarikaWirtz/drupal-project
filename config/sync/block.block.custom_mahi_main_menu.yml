@@ -1,0 +1,27 @@
+uuid: 9d7d1d3a-5d42-439c-8cff-c20ba1a9f5fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - custom_mahi
+_core:
+  default_config_hash: gc42M-jgw5dDfV73xZrNTQdNhX6ol9H4yKnnYdzkXGs
+id: custom_mahi_main_menu
+theme: custom_mahi
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 3
+  expand_all_items: true
+visibility: {  }
