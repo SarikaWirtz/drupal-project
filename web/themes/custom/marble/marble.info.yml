@@ -3,3 +3,7 @@ type: theme
 description: 'Starter theme based on Olivero'
 core_version_requirement: ^11
 base theme: olivero
+
+components:
+  namespaces:
+    marble: components

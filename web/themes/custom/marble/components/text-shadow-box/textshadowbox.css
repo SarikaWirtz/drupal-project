@@ -1,0 +1,30 @@
+.text-shadow-box {
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.text-shadow-box__title {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+}
+
+.text-shadow-box__text {
+  line-height: 1.6;
+}
+
+/* light theme */
+
+.text-shadow-box--light {
+  background: #ffffff;
+  color: #333;
+}
+
+/* dark theme */
+
+.text-shadow-box--dark {
+  background: #2c2c2c;
+  color: #ffffff;
+}

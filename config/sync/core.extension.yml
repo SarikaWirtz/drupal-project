@@ -44,6 +44,7 @@ module:
   responsive_image: 0
   search: 0
   shortcut: 0
+  storybook: 0
   system: 0
   taxonomy: 0
   text: 0

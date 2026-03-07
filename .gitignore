@@ -150,3 +150,7 @@ tmp
 .gitattributes
 /*.sql
 /*.sql.gz
+
+*storybook.log
+*.stories.json
+storybook-static

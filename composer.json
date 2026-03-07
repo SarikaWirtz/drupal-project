@@ -29,6 +29,7 @@
         "drupal/mahi": "^1.1",
         "drupal/maxlength": "^3.1",
         "drupal/paragraphs": "^1.19",
+        "drupal/storybook": "^1.0",
         "drush/drush": "^13.7",
         "npm-asset/splidejs--splide": "^4.1",
         "oomphinc/composer-installers-extender": "^2.0"

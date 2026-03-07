@@ -1,0 +1,13 @@
+{% stories card with { title: 'Components/Card' } %}
+
+  {% story default with {
+    name: 'Default',
+    args: {
+      title: 'Example Card',
+      text: 'Storybook test'
+    }
+  } %}
+    {% include 'marble:card' %}
+  {% endstory %}
+
+{% endstories %}

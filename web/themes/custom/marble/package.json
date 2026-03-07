@@ -1,0 +1,17 @@
+{
+  "name": "marble",
+  "private": true,
+  "scripts": {
+    "storybook": "ddev drush storybook:generate-all-stories && storybook dev -p 6010",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.2.16",
+    "@storybook/addon-docs": "^10.2.16",
+    "@storybook/addon-webpack5-compiler-swc": "^4.0.2",
+    "@storybook/server-webpack5": "^10.2.16",
+    "eslint-plugin-storybook": "^10.2.16",
+    "null-loader": "^4.0.1",
+    "storybook": "^10.2.16"
+  }
+}

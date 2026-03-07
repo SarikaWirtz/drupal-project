@@ -1,0 +1,12 @@
+{% stories text_shadow_box with { title: 'Components/Text Shadow Box' } %}
+
+  {% story default with {
+    args: {
+      title: 'Text Shadow Box',
+      text: 'This is a test text shadow box.'
+    }
+  } %}
+    {% include 'marble:text-shadow-box' %}
+  {% endstory %}
+
+{% endstories %}
