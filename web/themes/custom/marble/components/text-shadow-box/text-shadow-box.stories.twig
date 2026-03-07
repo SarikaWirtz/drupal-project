@@ -3,7 +3,18 @@
   {% story default with {
     args: {
       title: 'Text Shadow Box',
-      text: 'This is a test text shadow box.'
+      text: 'This is a test text shadow box.',
+      theme: 'light'
+    }
+  } %}
+    {% include 'marble:text-shadow-box' %}
+  {% endstory %}
+
+  {% story dark with {
+    args: {
+      title: 'Dark Shadow Box',
+      text: 'This variation shows the dark theme with stronger contrast.',
+      theme: 'dark'
     }
   } %}
     {% include 'marble:text-shadow-box' %}
