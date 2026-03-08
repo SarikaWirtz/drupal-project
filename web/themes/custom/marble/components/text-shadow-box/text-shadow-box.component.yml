@@ -16,3 +16,8 @@ props:
         - light
         - dark
       default: light
+
+# libraryOverrides:
+#   css:
+#     component:
+#       text-shadow-box.css: {}
